@@ -1,0 +1,409 @@
+*{
+    box-sizing: border-box;
+}
+@font-face{
+    font-family: 'FZLTHK';
+    src: url('./font/SoinSansPro-LightOblique.ttf') format('truetype'); 
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "MicrosoftYaHei", -apple-system ;
+    font-size: 14px;
+    color: #333;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+}
+.page-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 74px;
+}
+.header-logo{
+    margin-left: 100px;
+    height: 52px; 
+}
+.heager-logo-img{
+    width: 100%;
+    height: 100%;
+}
+.header-login-container{
+    margin-right: 100px;
+    display: flex;
+    align-items: center;
+}
+.header-login{
+    display: flex;
+    align-items: center;
+}
+.header-login::after{
+    content: "";
+    display: inline-block;
+    margin: 0 4px ;
+    width: 1px;
+    height: 14px;
+    font-size: 16px;
+    background-color: #333;
+}
+.banner-img-container{
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 426px;
+    background-image: url(./images/banner.jpg);
+}
+.banner-img-title{
+    position: absolute;
+    top: 151px;
+    font-family: "MicrosoftYaHei";
+    left: calc(50% - 272px);
+    font-size: 40px;
+    color: #FFFFFF;
+}
+.banner-front-img{
+    width: 100%;
+    height: 100%;
+}
+.banner-navi-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    background-color: #153188;
+}
+.banner-navi-list.fixed{
+    position: fixed;
+    top: 0;
+}
+.banner-navi-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 192px;
+    height: 100%;
+    font-family: 'Lantinghei SC';
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.banner-navi-item.active{
+    background-color: rgba(255, 255, 255, .3);
+}
+.banner-navi-item:hover{
+    background-color: rgba(255, 255, 255, .1);
+}
+.intro-section{
+    margin: 61px 100px 0;
+}
+.intro-info{
+    margin-top: 30px;
+    line-height: 30px;
+}
+.onlinecourse-section{
+    margin: 51px 100px 0;
+}
+
+.online-video-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 31px;
+    height: 538px;
+}
+.online-video{
+    width: 960px;
+    height: 100%;
+}
+.online-courses{
+    margin-top: 25px;
+}
+.online-courses-lesson.collapse .online-courses-item{
+    display: none;
+}
+.online-courses-lesson.collapse .online-title-icon{
+    transition: transform 0.5s ease; 
+    transform: rotateZ(-90deg);
+}
+.online-courses-title{
+    font-size: 18px;
+}
+.online-courses-desc-box{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #999;
+    font-size: 12px;
+}
+.online-courses-desc{
+    margin-right: 15px;
+}
+.online-courses-desctime{
+    margin-left: 14px;
+}
+.online-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.online-courses-list{
+    width: calc(75%);
+}
+.online-title-container ,.online-courses-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #E4E4E4;
+    box-shadow: inset 0px 1px 1px #F5F5F5;
+    border-bottom: 1px solid #F5F5F5;
+}
+.online-title{
+    font-family: 'Lantinghei SC';
+    font-weight: 600;
+}
+.online-title-icon{
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.online-title-download{
+    margin-right: 18px;
+}
+.online-courses-item{
+    padding-left: 51px;
+    padding-right: 20px;
+    background-color: #fff;
+    color: #666666; 
+}
+.online-courses-info-title{
+    line-height: 16px;
+    font-size: 16px;
+    font-family: 'Lantinghei SC';
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.online-courses-content{
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+.online-courses-subtitle{
+    margin-bottom: 6px;
+    font-size: 12px;
+    color: #999999;
+}
+.online-subtitle-info ,.online-subtitle-tag{
+    display: inline-block;
+    font-size: 12px;
+    color: #666;
+}
+.online-subtitle-tag{
+    padding: 2px 8px;
+    background-color: #F7F7F7;
+    border-radius: 2px;
+}
+.online-subtitle-tag:hover{
+    background-color: #E4E4E4;
+}
+.online-info-container{
+    width: calc(23%);
+}
+.online-info-line{
+    width: 100%;
+    height: 1px;
+    background-color: #F5F5F5;
+}
+.online-courses-info-title.technology{
+    position: relative;
+    margin-top: 16px;
+}
+.online-social-box{
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+}
+.online-social-img{
+    margin-right: 10px;
+}
+.online-social-desc{
+    font-size: 12px;
+    font-weight: 600;
+}
+.online-social-content{
+    display: flex;
+    flex-direction: column;
+}
+.online-social-button-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.online-social-button{
+    padding: 2px 8px;
+    border-radius: 2px;
+    border: 2px solid #00A8FF; 
+    background-color: #00A8FF;
+    color: #fff;
+}
+.ourteachers-section ,.dragonboard-section{
+    margin: 61px 100px 0;
+}
+.ourteachers-content{
+    margin-top: 51px;
+    position: relative;
+}   
+.ourteachers-item{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lantinghei SC';
+    margin: 0 25px;
+}
+.ourteachers-list{
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ourteachers-arrow{
+    position: absolute;
+    top: calc(50% - 20px);
+}
+.ourteachers-arrow.right{
+    right: 0;
+    transform: rotateY(180deg);
+}
+.ourteachers-item-name{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.ourteachers-item-team ,.ourteachers-item-desc{
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #999999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ourteachers-item-team.qua{
+    margin-top: 0;
+}
+.ourteachers-item-desc{
+    width: 100%;
+    max-height: 50px;
+    color: #666666;
+}
+.dragonboard-content{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dragonboard-info-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dragonboard-img{
+    margin-right: 20px;
+}
+.dragonboard-info-title{
+    font-family: "MicrosoftYaHei";
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+.dragonboard-info-desc{
+    margin-bottom: 20px;
+    font-family:'FZLTHK';
+    font-weight: normal;
+    font-size: 13px;
+    color: #666666;
+}
+.dragonboard-button{
+    margin-right: 15px;
+    padding: 8px 35px;
+    border: 1px solid #00A8FF;
+    border-radius: 2px;
+    color: #00A8FF;
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+.dragonboard-button:hover{
+    background-color: #00A8FF;
+    border: 1px solid #00A8FF;
+    color: #fff;
+}
+.dragonboard-relevant{
+    margin-top: 25px;
+    font-family: 'FZLTHK';
+    font-weight: normal;
+}   
+.dragonboard-relevant-title{
+    margin-right: 11px;
+    font-size: 15px;
+    color: #666666;
+}
+.dragonboard-tag{
+    margin-right: 10px;
+    padding: 8px 17px;
+    font-family: 'FZLTHK';
+    font-size: 12px;
+    color: #1C7C89;
+    background-color: #CAEAEF;
+    border-radius: 15px;
+}
+.dragonboard-direction{
+    margin-top: 31px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dragonboard-line{
+    margin-top: 30px;
+    width: 100%;
+    height: 1px;
+    background-color: #F5F5F5;
+}
+.qualcomm-section{
+    margin: 31px 100px 65px;
+}
+.qualcomm-group{
+    margin: 51px 86px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.qualcomm-group-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.qualcomm-item-title{
+    font-family:'Lantinghei SC';
+    margin-top: 22px;
+    font-weight: 600;
+}
+.qualcomm-desc{
+    margin-top: 13px;
+    font-family:'Lantinghei SC';
+    font-weight: 600;
+    font-size: 12px;
+    color: #999999;
+}
+.qualcomm-button{
+    margin-top: 15px;
+    padding: 5px 18px;
+    font-weight: 600;
+    border-radius: 2px;
+    border: 2px solid #00A8FF; 
+    background-color: #00A8FF;
+    color: #fff;
+}
