@@ -98,14 +98,16 @@ body{
     background-color: rgba(255, 255, 255, .1);
 }
 .intro-section{
-    margin: 61px 100px 0;
+    max-width: 956px;
+    margin: 61px auto 0;
 }
 .intro-info{
     margin-top: 30px;
     line-height: 30px;
 }
 .onlinecourse-section{
-    margin: 51px 100px 0;
+    max-width: 956px;
+    margin: 51px auto 0;
 }
 
 .online-video-container{
@@ -249,7 +251,8 @@ body{
     color: #fff;
 }
 .ourteachers-section ,.dragonboard-section{
-    margin: 61px 100px 0;
+    max-width: 956px;
+    margin: 61px auto 0;
 }
 .ourteachers-content{
     margin-top: 51px;
@@ -261,7 +264,11 @@ body{
     flex-direction: column;
     align-items: center;
     font-family: 'Lantinghei SC';
-    margin: 0 25px;
+    margin: 0 auto;
+}
+.ourteachers-item.carousel-moving{
+    transition: transform 0.1s ease;
+    transform: translateX(200px);
 }
 .ourteachers-list{
     margin: 0 50px;
@@ -372,7 +379,8 @@ body{
     background-color: #F5F5F5;
 }
 .qualcomm-section{
-    margin: 31px 100px 65px;
+    max-width: 956px;
+    margin: 31px auto 65px;
 }
 .qualcomm-group{
     margin: 51px 86px 0;

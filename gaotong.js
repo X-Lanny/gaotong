@@ -8,6 +8,8 @@ const PAGE = {
         ourteachersItemWidth: 200,
     },
     init: function(){
+        let item = document.getElementsByClassName('ourteachers-item');
+        item.className = 'ourteachers-item carousel-moving';
         this.bind();
         this.refresh();
     },
@@ -45,7 +47,16 @@ const PAGE = {
             let firstItem =  ourteachersArray[0];
             let lastItem = ourteachersArray[ourteachersArray.length - 1];
             ourteachersList.appendChild(firstItem);
-            // for(i = 0; i< ourteachersArray.length ;i++){            //不用再移动距离了
+            let ourteachersItems = document.getElementsByClassName('ourteachers-item');
+            for(i=0;i<ourteachersItems.length;i++){
+                ourteachersItems[i].className = 'ourteachers-item carousel-moving';
+            }
+            setTimeout(() => {
+                for(i=0;i<ourteachersItems.length;i++){
+                    ourteachersItems[i].className = 'ourteachers-item';
+                }
+            }, 100);
+            // for(i = 0; i< ourteachersArray.length ;i++){//不用再移动距离了
             //     ourteachersArray[i].style.transform = `translateX(-${distance}px)`;
             // }
         }
@@ -53,6 +64,15 @@ const PAGE = {
             let firstItem =  ourteachersArray[0];
             let lastItem = ourteachersArray[ourteachersArray.length - 1];
             ourteachersList.insertBefore(lastItem, firstItem);
+            let ourteachersItems = document.getElementsByClassName('ourteachers-item');
+            for(i=0;i<ourteachersItems.length;i++){
+                ourteachersItems[i].className = 'ourteachers-item carousel-moving';
+            }
+            setTimeout(() => {
+                for(i=0;i<ourteachersItems.length;i++){
+                    ourteachersItems[i].className = 'ourteachers-item';
+                }
+            }, 100);
         }
     },
     //6点击课程，页面滚动到视频播放模块，并播放视频
