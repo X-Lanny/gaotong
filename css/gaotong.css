@@ -79,7 +79,9 @@ body{
 .banner-navi-list.fixed{
     position: fixed;
     top: 0;
+    z-index: 10;
 }
+
 .banner-navi-item{
     display: flex;
     justify-content: center;
@@ -100,6 +102,9 @@ body{
 .intro-section{
     max-width: 956px;
     margin: 61px auto 0;
+}
+.intro-section.fixed{ 
+    padding-top: 70px;
 }
 .intro-info{
     margin-top: 30px;
@@ -235,8 +240,10 @@ body{
     font-weight: 600;
 }
 .online-social-content{
+    height: 44px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 .online-social-button-box{
     display: flex;
@@ -244,8 +251,9 @@ body{
     justify-content: space-between;
 }
 .online-social-button{
-    padding: 2px 8px;
+    padding: 1px 6px;
     border-radius: 2px;
+    font-size: 12px;
     border: 2px solid #00A8FF; 
     background-color: #00A8FF;
     color: #fff;
@@ -257,9 +265,10 @@ body{
 .ourteachers-content{
     margin-top: 51px;
     position: relative;
+    /* overflow: hidden; */
 }   
 .ourteachers-item{
-    width: 200px;
+    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -267,7 +276,7 @@ body{
     margin: 0 auto;
 }
 .ourteachers-item.carousel-moving{
-    transition: transform 0.1s ease;
+    transition: transform 0.5s ease;
     transform: translateX(200px);
 }
 .ourteachers-list{
@@ -381,6 +390,8 @@ body{
 .qualcomm-section{
     max-width: 956px;
     margin: 31px auto 65px;
+    padding-bottom: 300px;
+    /* 长度不够scroll会跳转不到 */
 }
 .qualcomm-group{
     margin: 51px 86px 0;
